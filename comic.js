@@ -23,7 +23,7 @@ getComic(heroId)
 
 //pega as infos das comics
 function getComic(idHeroi){
-    fetch(`http://gateway.marvel.com/v1/public/characters/${idHeroi}/comics?ts=${timeStamp}&apikey=${apiKey}&hash=${md5}&limit=10`)
+    fetch(`https://gateway.marvel.com/v1/public/characters/${idHeroi}/comics?ts=${timeStamp}&apikey=${apiKey}&hash=${md5}&limit=10`)
    .then((response) => response.json())
    .then((info) => {
        const divComics = document.querySelector('#container_comics')
