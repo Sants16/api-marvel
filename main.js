@@ -3,7 +3,7 @@ const apiKey = '78e56bd14299bb283e9e3d1195025ba9'
 const md5 = '6680e86261d634f5b51b8d1045647df3'
 
 //pega as infos dos herois
-fetch(`http://gateway.marvel.com/v1/public/characters?ts=${timeStamp}&apikey=${apiKey}&hash=${md5}&limit=20`)
+fetch(`https://gateway.marvel.com/v1/public/characters?ts=${timeStamp}&apikey=${apiKey}&hash=${md5}&limit=20`)
 .then((response) => response.json())
 .then((info) => {
     const divHeroes = document.querySelector('#container_heroes')

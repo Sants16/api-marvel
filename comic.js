@@ -6,7 +6,7 @@ const heroId = urlSearchParams.get('id')
 console.log(heroId)
 
 //pega as informações de cada heroi especifico
-fetch(`http://gateway.marvel.com/v1/public/characters/${heroId}?ts=${timeStamp}&apikey=${apiKey}&hash=${md5}`)
+fetch(`https://gateway.marvel.com/v1/public/characters/${heroId}?ts=${timeStamp}&apikey=${apiKey}&hash=${md5}`)
 .then((response) => response.json()).then
 ((info) => {
     info.data.results.map((hero) => {
