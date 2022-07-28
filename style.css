@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(34, 34, 34);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+section h2{
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid red;
+    margin-left: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#container_heroes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container_comics{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container_comics p, #hero_desc p{
+    color: white;
+    text-align: justify;
+    font-family: 'Taviraj', serif;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#titulo{
+    background-color: red;
+    box-shadow: 5px 5px 5px brown;
+    width: 1100px;
+    margin-bottom: 10px;
+}
+
+#titulo h1{
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    margin: 0;
+    font-size: 65px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.hide {
+    display: none;
+}
+
+.heroes, .comics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    background-color: #333;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.heroes img, .comics img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.heroes h1, .comics h1, #hero_desc h1{
+    font-family: 'Bebas Neue', cursive;
+    border-left: 10px solid red;
+    color: white;
+    padding-left: 5px;
+    margin-left: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-flow: column wrap;
+}
+
+.content a{  
+    align-self: flex-end;
+    margin-right: 5px;
+    font-family: 'Koulen', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.heroes a:hover{
+    color: rgb(238, 57, 57);
+    text-shadow: 2px 2px 2px black;
+}
+
+.list{
+    list-style: none;
+}
+
+#hero_desc{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#hero_desc img{
+    width: 40rem;
+    height: 28rem;
+}
